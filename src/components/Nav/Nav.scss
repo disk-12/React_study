@@ -1,0 +1,92 @@
+.Header{
+  display: flex;
+  height: 75px;
+  border-bottom: rgb(219, 219, 219) 1px solid;
+}
+.Header__logoImage{
+  height:100%;
+  width:227px;
+}
+.Header__main{
+  flex:1;
+  display: flex;
+  justify-content: space-evenly 
+}
+.Header__sub{
+  width:228px;
+  display: flex;
+}
+.Header__subItem{
+  height:75px;
+  width:75px;
+  border-left: rgb(219, 219, 219) 1px solid;
+  display: flex;
+  justify-content: center; /*左右中央揃え*/
+  align-items: center;
+  color:gray;
+  transition: 0.3s ;
+}
+.Header__subItem:hover{
+  color:red;
+}
+.Header__label{
+  display:block;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 8px;
+}
+.Header__buttonHover{
+  display: flex;
+  justify-content: center; /*左右中央揃え*/
+  align-items: center;
+  flex-flow: column;
+}
+
+.Header__subIcon{
+  font-size:25px;
+}
+
+.Header__mainIcon{
+
+}
+.Header__mainLabel{
+  font-weight: bolder; 
+  padding-left: 8px;
+}
+
+.Header__itemHover{
+  color:gray;
+  transition: 0.3s;
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+  position: relative;
+}
+.Header__itemHover:hover{
+  
+  color:red;
+}
+.Header__itemHover:after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  width:70%;
+  margin: 0 auto;
+  height:5px;
+  background-color: red;
+  transition: 0.3s;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.Header__itemHover:hover:after{
+  content:"";
+  background-color: red;
+  transform: scaleY(1);
+}
+.Header__item{
+
+  flex-grow: 1;
+}
